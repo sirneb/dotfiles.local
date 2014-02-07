@@ -7,10 +7,8 @@ My .local dotfiles, using Thoughtbot's dotfiles
 Install
 -------
 
-Install [Thoughtbot's dotfiles](https://github.com/thoughtbot/dotfiles)
+Follow instructions for [Thoughtbot's dotfiles](https://github.com/thoughtbot/dotfiles)
 
-Install [rcm](https://github.com/thoughtbot/rcm)
-
-Install:
+Run:
 
     rcup -d dotfiles.local -x README.md
