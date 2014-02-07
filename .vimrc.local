@@ -1,0 +1,17 @@
+" fast saving
+nmap <leader>w :w!<cr>
+
+" fast esc
+inoremap jk <esc>
+
+" clipboard os
+set clipboard=unnamed
+
+" vim-tmux-navigator back to original bindings
+" let g:tmux_navigator_no_mappings = 1
+"
+" nnoremap <silent> <C-w>h :TmuxNavigateLeft<cr>
+" nnoremap <silent> <C-w>j :TmuxNavigateDown<cr>
+" nnoremap <silent> <C-w>k :TmuxNavigateUp<cr>
+" nnoremap <silent> <C-w>l :TmuxNavigateRight<cr>
+" nnoremap <silent> <C-w>p :TmuxNavigatePrevious<cr>
