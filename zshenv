@@ -1,14 +1,11 @@
-if [[ -e /usr/local/share/chruby ]]; then
-  # Load chruby
-  source '/usr/local/share/chruby/chruby.sh'
-  #
-  #     # Automatically switch rubies
-  source '/usr/local/share/chruby/auto.sh'
-  #
-  #         # Set a default ruby if a .ruby-version file exists in the home dir
-  if [[ -f ~/.ruby-version ]]; then
-    chruby $(cat ~/.ruby-version)
-  fi
-fi
+# load thoughtbot/dotfiles scripts
+export PATH="$HOME/.bin:$PATH"
 
-chruby ruby-2.0
+# mkdir .git/safe in the root of repositories you trust
+export PATH=".git/safe/../../bin:$PATH"
+
+#To use Homebrew's directories rather than ~/.rbenv add to your profile:
+export RBENV_ROOT=/usr/local/var/rbenv
+
+#  To enable shims and autocompletion add to your profile:
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
