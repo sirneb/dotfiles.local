@@ -7,6 +7,12 @@ inoremap jk <esc>
 " clipboard os
 set clipboard=unnamed
 
+" set highlight on search
+set hlsearch
+
+" set 80 character line (7.3+ only)
+set colorcolumn=80
+
 " vim-tmux-navigator back to original bindings
 " let g:tmux_navigator_no_mappings = 1
 "
